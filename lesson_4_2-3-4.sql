@@ -9,7 +9,7 @@ USE vk;
    Предварительно добавить такое поле в таблицу profiles со значением по умолчанию = true (или 1). */
 
 -- Добавим колонку is_active с дефолтным значением true (1)
-ALTER TABLE profiles ADD COLUMN is_active BOOl DEFAULT true;
+ALTER TABLE profiles ADD COLUMN is_active BIT DEFAULT true;
 
 -- Обновляем таблицу с учетом выволнения условия: текущая дата - дата рождения < 18
 UPDATE profiles
